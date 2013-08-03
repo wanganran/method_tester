@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Namespaces>
+  <Namespace Name="Method_Tester">
+   <Messages>
+    <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+     <Issue Name="Namespace" Certainty="95" Level="Error">从命名空间名称“Method_Tester”中移除下划线。</Issue>
+    </Message>
+   </Messages>
+  </Namespace>
+ </Namespaces>
+ <Targets>
+  <Target Name="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Method Tester(noajax).dll">
+   <Modules>
+    <Module Name="method tester(noajax).dll">
+     <Messages>
+      <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+       <Issue Name="NoStrongName" Certainty="95" Level="CriticalError">用强名称密钥对 'Method Tester(noajax).dll' 进行签名。</Issue>
+      </Message>
+      <Message Id="noajax" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+       <Issue Name="Assembly" Certainty="85" Level="Error">更正程序集名称 'Method Tester(noajax).dll' 中“noajax”的大小写，将其改为“Noajax”。</Issue>
+      </Message>
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+       <Issue Certainty="95" Level="Error">使用 CLSCompliant(true)来标记 'Method Tester(noajax).dll'，因为它公开外部可见的类型。</Issue>
+      </Message>
+     </Messages>
+     <Namespaces>
+      <Namespace Name="Method_Tester">
+       <Types>
+        <Type Name="_Default" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="95" Level="Error">从类型名称 '_Default' 中移除下划线。</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="result" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="result" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">更正类型名称 'result' 中“result”的大小写，将其改为“Result”。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Execute(System.String[]&amp;,System.String[]&amp;,System.String&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="143">修改 'result.Execute(out string[], out string[], out string)' 以便捕捉比 'Exception' 更具体的异常，或者再次引发该异常。</Issue>
+            </Message>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="122">由于 'int.ToString()' 的行为可能因当前用户的区域设置不同而不同，请将 'result.Execute(out string[], out string[], out string)' 中的此调用替换为对 'int.ToString(IFormatProvider)' 的调用。如果要向用户显示 'int.ToString(IFormatProvider)' 的结果，请将“CultureInfo.CurrentCulture”指定为“IFormatProvider”参数；另外，如果软件将存储和访问此结果(例如，要将它保留到磁盘或数据库中)，则指定“CultureInfo.InvariantCulture”。</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="123">由于 'int.ToString()' 的行为可能因当前用户的区域设置不同而不同，请将 'result.Execute(out string[], out string[], out string)' 中的此调用替换为对 'int.ToString(IFormatProvider)' 的调用。如果要向用户显示 'int.ToString(IFormatProvider)' 的结果，请将“CultureInfo.CurrentCulture”指定为“IFormatProvider”参数；另外，如果软件将存储和访问此结果(例如，要将它保留到磁盘或数据库中)，则指定“CultureInfo.InvariantCulture”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getcurrent()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="85">修改 'result.getcurrent()' 以便捕捉比 'object' 更具体的异常，或者再次引发该异常。</Issue>
+            </Message>
+            <Message Id="System.String.Replace(System.String,System.String)" TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+             <Issue Name="StringCreation" Certainty="95" Level="Warning" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="82">'result.getcurrent()' 调用 'string.Replace(string, string)' 但不使用该方法返回的新字符串实例。如果不需要此实例，请将它作为参数传递给另一个方法，将此实例赋给变量或移除调用。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lblFlag" Kind="Field" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Flag" TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Name="MemberNoAlternate" Certainty="95" Level="Error">将成员名称 'result.lblFlag' 中的词条“Flag”替换为相应的替代项或者将它完全移除。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.Int32.ToString" TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="DependsOnFix">
+             <Issue Certainty="95" Level="Error" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="57">由于 'int.ToString()' 的行为可能因当前用户的区域设置不同而不同，请将 'result.Page_Load(object, EventArgs)' 中的此调用替换为对 'int.ToString(IFormatProvider)' 的调用。如果要向用户显示 'int.ToString(IFormatProvider)' 的结果，请将“CultureInfo.CurrentCulture”指定为“IFormatProvider”参数；另外，如果软件将存储和访问此结果(例如，要将它保留到磁盘或数据库中)，则指定“CultureInfo.InvariantCulture”。</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="result.aspx.cs" Line="60">由于 'int.ToString()' 的行为可能因当前用户的区域设置不同而不同，请将 'result.Page_Load(object, EventArgs)' 中的此调用替换为对 'int.ToString(IFormatProvider)' 的调用。如果要向用户显示 'int.ToString(IFormatProvider)' 的结果，请将“CultureInfo.CurrentCulture”指定为“IFormatProvider”参数；另外，如果软件将存储和访问此结果(例如，要将它保留到磁盘或数据库中)，则指定“CultureInfo.InvariantCulture”。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="result+progcode" Kind="Struct" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="progcode" TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="85" Level="Error">更正类型名称 'result.progcode' 中“progcode”的大小写，将其改为“Progcode”。</Issue>
+          </Message>
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+           <Issue Certainty="90" Level="Error">不要嵌套类型 'result.progcode'。或者，更改其可访问性，使它在外部不可见。</Issue>
+          </Message>
+          <Message TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+           <Issue Name="Equals" Certainty="75" Level="Warning">'result.progcode' 应重写 Equals。</Issue>
+           <Issue Name="op_Equality" Certainty="75" Level="Warning">'result.progcode' 应重写相等(==)和不等(!=)运算符。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Description" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.Description' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MethodCode" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.MethodCode' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MethodName" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.MethodName' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OtherCode" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.OtherCode' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Param" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.Param' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UsingList" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="Breaking">
+             <Issue Certainty="90" Level="Error">由于字段 'result.progcode.UsingList' 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="MethodTester">
+       <Types>
+        <Type Name="CompilerUnit" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+           <Issue Certainty="75" Level="Warning">'CompilerUnit' 是显然没有实例化过的内部类。如果是这样，请从程序集内移除该代码。如果此内部类只用于包含静态方法，请考虑添加私有构造函数，以阻止编译器生成默认构造函数。</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Compile(System.String,System.Boolean,System.Boolean,System.String[],System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="compile.cs" Line="37">'CompilerUnit.Compile(string, bool, bool, string[], string)' 调入具有 LinkDemand 的 'CodeDomProvider.CompileAssemblyFromSource(CompilerParameters, params string[])'。通过此调用，'CodeDomProvider.CompileAssemblyFromSource(CompilerParameters, params string[])' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'result.Execute(out string[], out string[], out string)'&#xD;&#xA;   -&gt;'result.Page_Load(object, EventArgs)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="compile.cs" Line="37">'CompilerUnit.Compile(string, bool, bool, string[], string)' 调入具有 LinkDemand 的 'CompilerParameters.GenerateExecutable.set(bool)'。通过此调用，'CompilerParameters.GenerateExecutable.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'result.Execute(out string[], out string[], out string)'&#xD;&#xA;   -&gt;'result.Page_Load(object, EventArgs)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="compile.cs" Line="37">'CompilerUnit.Compile(string, bool, bool, string[], string)' 调入具有 LinkDemand 的 'CompilerParameters.GenerateInMemory.set(bool)'。通过此调用，'CompilerParameters.GenerateInMemory.set(bool)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'result.Execute(out string[], out string[], out string)'&#xD;&#xA;   -&gt;'result.Page_Load(object, EventArgs)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="compile.cs" Line="37">'CompilerUnit.Compile(string, bool, bool, string[], string)' 调入具有 LinkDemand 的 'CompilerParameters.OutputAssembly.set(string)'。通过此调用，'CompilerParameters.OutputAssembly.set(string)' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'result.Execute(out string[], out string[], out string)'&#xD;&#xA;   -&gt;'result.Page_Load(object, EventArgs)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="E:\vs projects\Method Tester(noajax)\Method Tester(noajax)" File="compile.cs" Line="37">'CompilerUnit.Compile(string, bool, bool, string[], string)' 调入具有 LinkDemand 的 'CompilerParameters.ReferencedAssemblies.get()'。通过此调用，'CompilerParameters.ReferencedAssemblies.get()' 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: &#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'CompilerUnit.Compile(string, bool, bool, string[], string)'&#xD;&#xA;   -&gt;'result.Execute(out string[], out string[], out string)'&#xD;&#xA;   -&gt;'result.Page_Load(object, EventArgs)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReferenceAssemblyCollection" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2010-03-15 03:22:03Z" FixCategory="NonBreaking">
+             <Issue Certainty="75" Level="Warning">似乎从未使用过字段 'CompilerUnit.ReferenceAssemblyCollection' 或只对它进行过赋值。请使用此字段或将它移除。</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+   <Name>程序集应具有有效的强名称</Name>
+   <Description>程序集没有强名称，强名称无效，或者强名称只有经过计算机配置后才有效。不应部署处于这种状态的程序集。出现这种情况最常见原因有: 1) 对程序集进行签名后，修改了该程序集的内容；2) 签名过程失败；3) 延迟了程序集签名；4) 存在一个允许检查通过(原本不应通过)的注册表项。</Description>
+   <Resolution Name="NoStrongName">用强名称密钥对 {0} 进行签名。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182127(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUninstantiatedInternalClasses" Category="Microsoft.Performance" CheckId="CA1812">
+   <Name>避免未实例化的内部类</Name>
+   <Description>检测到显然从未实例化过的内部类。此规则不会试图检测后期绑定创建，并且，如果某一类型的实例都是以这种方法(例如，通过 Activator.CreateInstance 或将类型作为参数传递给 TypeConverter 构造函数)创建的，则将产生误报。</Description>
+   <Resolution Name="Default">{0} 是显然没有实例化过的内部类。如果是这样，请从程序集内移除该代码。如果此内部类只用于包含静态方法，请考虑添加私有构造函数，以阻止编译器生成默认构造函数。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182265(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823">
+   <Name>避免未使用的私有字段</Name>
+   <Description>检测到程序集内有似乎未访问过的私有字段。如果错误地引发了此冲突，请向 Visual Studio 代码分析团队发送问题报告。</Description>
+   <Resolution Name="Default">似乎从未使用过字段 {0} 或只对它进行过赋值。请使用此字段或将它移除。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms245042(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031">
+   <Name>不要捕捉一般异常类型</Name>
+   <Description>不应捕捉 Exception 或 SystemException。捕捉一般异常类型会使库用户看不到运行时问题，并会使调试复杂化。您应该仅捕捉自己可以进行适当处理的异常。</Description>
+   <Resolution Name="Default">修改 {0} 以便捕捉比 {1} 更具体的异常，或者再次引发该异常。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182137(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051">
+   <Name>不要声明可见实例字段</Name>
+   <Description>在其声明类型的外部可见的实例字段会限制您更改这些数据项的实现详细信息的能力。请改用属性。属性不会降低可用性或性能，并且能够提供灵活性，因为它们隐藏了基础数据的实现详细信息。</Description>
+   <Resolution Name="Default">由于字段 {0} 在其声明类型的外部可见，因此，请将它的可访问性改为私有，并添加一个与该字段当前的可访问性相同的属性以提供对该属性的访问。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182141(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIgnoreMethodResults" Category="Microsoft.Usage" CheckId="CA1806">
+   <Name>不要忽略方法结果</Name>
+   <Description>对于返回新的字符串实例的方法，应将其结果赋予变量并随后使用。如果未将创建新对象的方法(如 String.ToLower())的结果赋给变量，则该调用便浪费了。</Description>
+   <Resolution Name="StringCreation">{0} 调用 {1} 但不使用该方法返回的新字符串实例。如果不需要此实例，请将它作为参数传递给另一个方法，将此实例赋给变量或移除调用。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182273(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="UsageRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>不要使用链接请求间接公开方法</Name>
+   <Description>不要使用不执行安全性检查的方法来包装受 LinkDemand 保护的方法。LinkDemand 检查直接调用方的权限而不是调用堆栈中所有调用方的权限。在这种情况下，将检查包装方法的权限。如果包装方法本身不检查调用堆栈中位置较高的调用方的权限，则尽管恶意代码没有足够的权限，但它仍可能能够执行被包装的函数。</Description>
+   <Resolution Name="Default">{0} 调入具有 LinkDemand 的 {1}。通过此调用，{1} 被间接公开给用户代码。检查以下可能公开避开安全保护的方法的调用堆栈: {2}</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182303(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="SecurityRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1709">
+   <Name>标识符的大小写应当正确</Name>
+   <Description>类型、命名空间和成员标识符应采用 Pascal 大小写格式。参数标识符应采用 Camel 大小写格式。这些标识符内由两个字母组成的首字母缩略词应全部大写，例如，应采用 System.IO，而不是 System.Io。由三个或更多个字母组成的首字母缩略词应采用 Pascal 大小写格式，例如，应采用 System.Xml，而不是 System.XML。Pascal 大小写格式约定每个单词的首字母大写，如 BackColor。Camel 大小写格式约定第一个单词的首字母小写，所有后续单词的首字母都大写，如 backgroundColor。尽管有些由两个字母组成的首字母缩略词习惯采用不完全大写形式，但不能因此而排斥此规则。例如，“DbConnection”很常见，但并不正确，应采用 DBConnection。为了与现有的非托管符号方案兼容，可能需要违反此规则。但一般来说，这些符号在使用它们的程序集之外不可见。</Description>
+   <Resolution Name="Assembly">更正程序集名称 {1} 中“{0}”的大小写，将其改为“{2}”。</Resolution>
+   <Resolution Name="Type">更正类型名称 {1} 中“{0}”的大小写，将其改为“{2}”。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182240(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="85">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+   <Name>标识符不应包含下划线</Name>
+   <Description>指定标识符时不要使用下划线。系统为应用程序生成的某些 Visual Studio 标识符会包含下划线字符。通常情况下应避免在公共标识符中使用下划线字符。</Description>
+   <Resolution Name="Namespace">从命名空间名称“{0}”中移除下划线。</Resolution>
+   <Resolution Name="Type">从类型名称 {0} 中移除下划线。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182245(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014">
+   <Name>用 CLSCompliantAttribute 标记程序集</Name>
+   <Description>程序集应使用 CLSCompliant 属性显式说明其 ClS 遵从性。没有此属性的程序集不符合 CLS。即使程序集、模块或类型的某些部分不符合 CLS，这些程序集、模块或类型本身也可以是符合 CLS 的。适用下列规则: 1) 如果元素标记为 CLSCompliant，则所有不符合 CLS 的成员都必须有参数设置为 false 的 CLSCompliant 属性。2) 对于每个不符合 CLS 的成员，都必须提供一个相应的符合 CLS 的备选成员。</Description>
+   <Resolution Name="Default">使用 CLSCompliant(true)来标记 {0}，因为它公开外部可见的类型。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182156(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034">
+   <Name>嵌套类型不应是可见的</Name>
+   <Description>不要使用 public、protected 或 protected internal (Protected Friend)等嵌套类型作为类型的分组方式。使用命名空间实现此目的。嵌套类型仅在极为有限的情况下才是最佳设计。此外，不是所有的用户都能清楚地了解嵌套类型成员的可访问性。枚举数不受此规则限制。</Description>
+   <Resolution Name="Default">不要嵌套类型 {0}。或者，更改其可访问性，使它在外部不可见。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182162(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="OverrideEqualsAndOperatorEqualsOnValueTypes" Category="Microsoft.Performance" CheckId="CA1815">
+   <Name>重写值类型上的 Equals 和相等运算符</Name>
+   <Description>与自定义实现相比，默认 System.ValueType 实现的性能可能要差一些。</Description>
+   <Resolution Name="Equals">{0} 应重写 Equals。</Resolution>
+   <Resolution Name="op_Equality">{0} 应重写相等(==)和不等(!=)运算符。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182276(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="PerformanceRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyIFormatProvider" Category="Microsoft.Globalization" CheckId="CA1305">
+   <Name>指定 IFormatProvider</Name>
+   <Description>如果存在一个采用 IFormatProvider 参数的重载，则应始终调用该重载，而不调用未采用该参数的重载。运行库中的某些方法可以将值与字符串表示形式相互进行转换，并采用一个字符串参数。该参数中包含一个或多个称为格式说明符的字符，用于指示如何对值进行转换。如果格式说明符的含义因区域性而异，则格式设置对象提供在字符串表示形式中使用的实际字符。如果排序和比较行为不得因区域性而改变，请指定 CultureInfo.InvariantCulture，否则，请指定 CultureInfo.CurrentCulture。</Description>
+   <Resolution Name="Default">由于 {0} 的行为可能因当前用户的区域设置不同而不同，请将 {1} 中的此调用替换为对 {2} 的调用。如果要向用户显示 {2} 的结果，请将“CultureInfo.CurrentCulture”指定为“IFormatProvider”参数；另外，如果软件将存储和访问此结果(例如，要将它保留到磁盘或数据库中)，则指定“CultureInfo.InvariantCulture”。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182190(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="UsePreferredTerms" Category="Microsoft.Naming" CheckId="CA1726">
+   <Name>使用首选词条</Name>
+   <Description>使用首先词条，不使用已否决的词条。</Description>
+   <Resolution Name="MemberNoAlternate">将成员名称 {1} 中的词条“{0}”替换为相应的替代项或者将它完全移除。</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/ms182258(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">类别</String>
+  <String Key="Certainty">确定性</String>
+  <String Key="CollapseAll">全部折叠</String>
+  <String Key="CheckId">检查 ID</String>
+  <String Key="Error">错误</String>
+  <String Key="Errors">错误</String>
+  <String Key="ExpandAll">全部展开</String>
+  <String Key="Help">帮助</String>
+  <String Key="Line">行</String>
+  <String Key="Messages">消息</String>
+  <String Key="LocationNotStoredInPdb">[位置未存储在 Pdb 中]</String>
+  <String Key="Project">项目</String>
+  <String Key="Resolution">解析</String>
+  <String Key="Rule">规则</String>
+  <String Key="RuleFile">规则文件</String>
+  <String Key="RuleDescription">规则说明</String>
+  <String Key="Source">源</String>
+  <String Key="Status">状态</String>
+  <String Key="Target">目标</String>
+  <String Key="Warning">警告</String>
+  <String Key="Warnings">警告</String>
+  <String Key="ReportTitle">代码分析报告</String>
+ </Localized>
+</FxCopReport>

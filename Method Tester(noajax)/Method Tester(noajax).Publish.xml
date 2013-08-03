@@ -1,0 +1,20 @@
+<publishData>
+  <publishTarget publishUrl="http://localhost/mt/">
+    <file relUrl="bin/Squishyware.Text.SyntaxHighlighting.dll" publishTime="04/06/2008 14:25:55" />
+    <file relUrl="bin/Method Tester(noajax).pdb" publishTime="03/15/2010 11:21:05" />
+    <file relUrl="result.aspx" publishTime="03/11/2010 13:54:54" />
+    <file relUrl="Default.aspx" publishTime="03/11/2010 13:39:14" />
+    <file relUrl="style.css" publishTime="02/25/2010 10:53:02" />
+    <file relUrl="bin/Method Tester(noajax).dll" publishTime="03/15/2010 11:21:06" />
+    <file relUrl="Web.config" publishTime="03/11/2010 20:55:55" />
+  </publishTarget>
+  <publishTarget publishUrl="ftp://graphonline.info/mt/">
+    <file relUrl="bin/Squishyware.Text.SyntaxHighlighting.dll" publishTime="04/06/2008 14:25:55" />
+    <file relUrl="bin/Method Tester(noajax).pdb" publishTime="03/11/2010 20:50:56" />
+    <file relUrl="result.aspx" publishTime="03/11/2010 13:54:54" />
+    <file relUrl="Default.aspx" publishTime="03/11/2010 13:39:14" />
+    <file relUrl="style.css" publishTime="02/25/2010 10:53:02" />
+    <file relUrl="Web.config" publishTime="03/11/2010 20:55:55" />
+    <file relUrl="bin/Method Tester(noajax).dll" publishTime="03/11/2010 20:50:56" />
+  </publishTarget>
+</publishData>

@@ -1,0 +1,8 @@
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\obj\Debug\ResolveAssemblyReference.cache
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Method Tester(noajax).dll
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Method Tester(noajax).pdb
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\obj\Debug\Method Tester(noajax).dll
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\obj\Debug\Method Tester(noajax).pdb
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Squishyware.Text.SyntaxHighlighting.dll
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Method Tester(noajax).dll.CodeAnalysisLog.xml
+E:\vs projects\Method Tester(noajax)\Method Tester(noajax)\bin\Method Tester(noajax).dll.lastcodeanalysissucceeded
